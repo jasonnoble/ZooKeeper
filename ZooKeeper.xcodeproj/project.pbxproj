@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8C7F7E601C645866000B7A67 /* zoo.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F7E5F1C645866000B7A67 /* zoo.json */; };
-		8C7F7E641C6459DC000B7A67 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7F7E631C6459DC000B7A67 /* SwiftyJSON.framework */; };
 		8CA4BA191C64563E00734F6B /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4BA181C64563E00734F6B /* Animals.swift */; };
 		8CA4BA1B1C6456FC00734F6B /* AnimalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA4BA1A1C6456FC00734F6B /* AnimalFactory.swift */; };
+		8CBA32591C6FE84900B3935A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA32581C6FE84900B3935A /* SwiftyJSON.swift */; };
 		8CE7B7A81C64524D00E6443B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B7A71C64524D00E6443B /* AppDelegate.swift */; };
 		8CE7B7AA1C64524E00E6443B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B7A91C64524E00E6443B /* MasterViewController.swift */; };
 		8CE7B7AC1C64524E00E6443B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7B7AB1C64524E00E6443B /* DetailViewController.swift */; };
@@ -40,9 +40,9 @@
 
 /* Begin PBXFileReference section */
 		8C7F7E5F1C645866000B7A67 /* zoo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zoo.json; sourceTree = "<group>"; };
-		8C7F7E631C6459DC000B7A67 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		8CA4BA181C64563E00734F6B /* Animals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		8CA4BA1A1C6456FC00734F6B /* AnimalFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalFactory.swift; sourceTree = "<group>"; };
+		8CBA32581C6FE84900B3935A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		8CE7B7A41C64524D00E6443B /* ZooKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE7B7A71C64524D00E6443B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE7B7A91C64524E00E6443B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C7F7E641C6459DC000B7A67 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,11 +121,11 @@
 				8CE7B7A91C64524E00E6443B /* MasterViewController.swift */,
 				8CE7B7AB1C64524E00E6443B /* DetailViewController.swift */,
 				8CE7B7AD1C64524E00E6443B /* Main.storyboard */,
+				8CBA32581C6FE84900B3935A /* SwiftyJSON.swift */,
 				8CA4BA171C6455C100734F6B /* Models */,
 				8CE7B7B01C64524E00E6443B /* Assets.xcassets */,
 				8CE7B7B21C64524E00E6443B /* LaunchScreen.storyboard */,
 				8CE7B7B51C64524E00E6443B /* Info.plist */,
-				8C7F7E631C6459DC000B7A67 /* SwiftyJSON.framework */,
 			);
 			path = ZooKeeper;
 			sourceTree = "<group>";
@@ -284,6 +283,7 @@
 				8CE7B7AC1C64524E00E6443B /* DetailViewController.swift in Sources */,
 				8CA4BA1B1C6456FC00734F6B /* AnimalFactory.swift in Sources */,
 				8CA4BA191C64563E00734F6B /* Animals.swift in Sources */,
+				8CBA32591C6FE84900B3935A /* SwiftyJSON.swift in Sources */,
 				8CE7B7AA1C64524E00E6443B /* MasterViewController.swift in Sources */,
 				8CE7B7A81C64524D00E6443B /* AppDelegate.swift in Sources */,
 			);
@@ -430,6 +430,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ZooKeeper",
 				);
 				INFOPLIST_FILE = ZooKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -445,6 +446,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ZooKeeper",
 				);
 				INFOPLIST_FILE = ZooKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
